@@ -23,7 +23,9 @@ echo "Reloading Wayland notification daemon..."
 swaync-client -rs
 
 echo "Reloading Waybar for new theme..."
-killall -SIGUSR2 waybar
+# killall -SIGUSR2 waybar
+# waybar &
+
 
 echo "Updating Firefox theme..."
 pywalfox update --verbose -p
